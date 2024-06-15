@@ -9,6 +9,10 @@ body {
   font-family: "IBM Plex Mono", monospace;
   background: #ebeaec71;
 }
+.h1 {
+  color: #6edfe7;
+  font-size: 3rem;
+}
 
 ul,
 li,
@@ -76,16 +80,15 @@ img {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.about h1 {
-  color: #6edfe7;
-  font-size: 3rem;
-}
 .about p {
   padding-bottom: 40px;
   max-width: 70ch;
   margin: 0 auto;
   font-style: italic;
   color: rgb(37, 36, 36);
+}
+.about:nth-child(3) {
+  padding-bottom: 0;
 }
 .species {
   text-align: center;
@@ -94,17 +97,42 @@ img {
   padding-top: 40px;
   padding-bottom: 40px;
 }
-.species h1 {
-  color: #6edfe7;
-  font-size: 3rem;
-}
 .media-images {
   display: flex;
   overflow-x: scroll;
   gap: 10px;
 }
-
 .media-images img {
   min-width: 220px;
   max-height: 300px;
+}
+.help {
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.group {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, max-content));
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+.lado {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 6px;
+  border: 1px solid #8426fc;
+  padding: 6px;
+}
+.lado a {
+  display: block;
+}
+.lado img {
+  max-width: 30px;
+  display: flex;
+  align-items: center;
 }
