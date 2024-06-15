@@ -1,9 +1,15 @@
+::root {
+  color: #6edfe7;
+}
+
 body {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
   font-family: "IBM Plex Mono", monospace;
+  background: #ebeaec71;
 }
+
 ul,
 li,
 a {
@@ -52,7 +58,7 @@ img {
 .wrapper {
   max-width: 1220px;
   margin-inline: auto;
-  background: #ebeaec71;
+  background: white;
 }
 .turtle-img {
   margin: 0 auto;
@@ -62,4 +68,43 @@ img {
   .turtle-img {
     padding-top: 0;
   }
+}
+.about {
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.about h1 {
+  color: #6edfe7;
+  font-size: 3rem;
+}
+.about p {
+  padding-bottom: 40px;
+  max-width: 70ch;
+  margin: 0 auto;
+  font-style: italic;
+  color: rgb(37, 36, 36);
+}
+.species {
+  text-align: center;
+  padding-left: 40px;
+  padding-right: 40px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+.species h1 {
+  color: #6edfe7;
+  font-size: 3rem;
+}
+.media-images {
+  display: flex;
+  overflow-x: scroll;
+  gap: 10px;
+}
+
+.media-images img {
+  min-width: 220px;
+  max-height: 300px;
 }
